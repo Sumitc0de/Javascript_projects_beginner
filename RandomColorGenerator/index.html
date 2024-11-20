@@ -1,1 +1,36 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="box " id="box1">
+            <p id="colorCode">#ffffff</p>
+            <button class="btns" id="hexbtn">Create HexColor</button>
+            <button class="btns" id="copyhexTOclipboard">Copy HexColor</button>
+        </div>
+        <div class="box " id="box2">
+            <p id="rgb-value">RGB(0,0,0)</p>
+            <div class="row">
+                <label for="">Red</label>
+                <input type="range" min="0" max="255" value="0" id="red">
+            </div>
+            <div class="row">
+                <label for="">Green</label>
+                <input type="range" min="0" max="255" value="0" id="green"> 
+            </div>
+          <div class="row">
+            <label for="">Blue</label>
+            <input type="range" min="0" max="255" value="0" id="blue">
+          </div>
+            <button class="btns" id="rgb-btn">Create RGBColor</button> <br>
+            <button class="btns" id="copyrgbTOclipboard">Copy RGBColor</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
