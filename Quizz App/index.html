@@ -6,36 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Quiz App</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
-    <!-- <h1 id="title">The <span>Quizz</span>  App</h1>
+    <h1 id="title">The <span>Quizz</span> App</h1>
     <div class="main-container">
         <h2>Select Quiz Type</h2>
         <div class="category-box">
-            <button class="btn">HTML</button>
-            <button class="btn">CSS</button>
-            <button class="btn">JavaScript</button>
-            <button class="btn">C Language</button>
-        </div>
-            <button class="select">Next</button>
-    </div> -->
-
-    <div class="quizbox">
-        <div class="question"> </div>
-        <div class="answer">
-      <!-- <button class="options">Option 1</button>
-      <button class="options">Option 1</button>
-      <button class="options">Option 1</button>
-      <button class="options">Option 1</button> -->
-        </div>
-        <div class="buttons">
-            <button id="next" > </button>
+            <button class="btn" onclick="selectCategory('html')">HTML</button>
+            <button class="btn" onclick="selectCategory('css')">CSS</button>
+            <button class="btn" onclick="selectCategory('javascript')">JavaScript</button>
+            <button class="btn" onclick="selectCategory('c')">C Language</button>
         </div>
     </div>
 
-    <script src="main.js"></script>
+    <div class="quizbox" style="display: none;">
+        <div class="question"> </div>
+        <div class="answer"></div>
+        <div class="buttons">
+            <button id="next">Next</button>
+        </div>
+    </div>
+
+    <script src="main.js">
+       
+    </script>
 </body>
 
 </html>
